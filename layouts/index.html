@@ -121,8 +121,10 @@
             <h3 class="mt-0">{{ .Site.Params.cta.title | markdownify }}</h3>
             <p>{{ .Site.Params.cta.description | markdownify }}</p>
             {{ if .Site.Params.cta.button.enable }}
-            <a href="{{ .Site.Params.cta.button.link | absURL }}"
-              class="btn btn-primary">{{ .Site.Params.cta.button.label }}</a>
+            <!-- calendly button -->
+            <a href=""
+              class="btn btn-primary" 
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/melks'});return false;">{{ .Site.Params.cta.button.label }}</a>
             {{ end }}
           </div>
         </div>
@@ -134,3 +136,5 @@
 <!-- /cta -->
 
 {{ end }}
+
+<a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/melks'});return false;">Schedule time with me</a>

@@ -44,7 +44,6 @@ title = "Get the best hugo templates"
 [params.cta.button]
 enable = true
 label = "Visit Here"
-link = "https://gethugothemes.com/shop/"
 [[params.plugins.calendly]]
 css = "https://calendly.com/assets/external/widget.css"
 js = "https://calendly.com/assets/external/widget.js"
