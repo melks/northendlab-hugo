@@ -18,7 +18,7 @@
   {{ "<!-- calendly resources -->" | safeHTML }}
   {{ range .Site.Params.plugins.calendly }}
   <link rel="stylesheet" href="{{ .css | absURL }} "> 
-  <script src= href="{{ .js | absURL }} " type="text/javascript"></script>
+  <script src="{{ .js | absURL }} " type="text/javascript"></script>
   {{ end }}
 
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
