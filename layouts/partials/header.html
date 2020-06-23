@@ -9,7 +9,7 @@
       </button>
 
       <div class="collapse navbar-collapse text-center" id="navigation">
-        <ul class="navbar-nav ml-auto">
+        <!--ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
           </li>
@@ -32,7 +32,8 @@
             </li>
             {{ end }}
           {{ end }}
-        </ul>
+          </ul-->
+        <button type="button" class="btn btn-light" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/melks'});return false;"><b>Book a Lesson</b></button>
         {{ if .Site.Params.search.enable }}
         {{ "<!-- search -->" | safeHTML }}
         <div class="search">

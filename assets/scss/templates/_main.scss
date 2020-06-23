@@ -230,7 +230,7 @@
     border-radius: 5px;
     &.active{
       @extend .shadow;
-      color: $white;
+      color: $black;
       background: $primary-color;
     }
   }
