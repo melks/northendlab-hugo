@@ -16,7 +16,7 @@
 <main role="main" class="container">
   <div class="jumbotron">
     <div class="row">
-      <div class="col-md-7">
+      <div class="col-md-7 order-2">
         <h1>About Richard</h1>
         <h2>Pro Musician and Teacher</h2>
         <p class="lead">Richard earned his <b>BA in Music at Yale University</b>.
@@ -29,8 +29,8 @@
         <a class="btn btn-lg btn-primary" href="" role="button"
         onclick="Calendly.initPopupWidget({url: 'https://calendly.com/melks'});return false;">Book your first lesson now »</a>
       </div>
-      <div class="col-md-5">
-        <img src="{{ .Site.Params.banner.image | relURL }}" class="mx-auto d-block rounded m-3 p-3" alt="">
+      <div class="col-md-5 order-1">
+        <img src="{{ .Site.Params.banner.image | relURL }}" class="img-thumbnail mx-auto d-block rounded m-3 p-3" alt="">
       </div>
     </div>
   </div>
