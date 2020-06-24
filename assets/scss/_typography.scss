@@ -17,6 +17,9 @@ p, .paragraph {
   font-family: $primary-font;
 }
 
+b{
+  font-weight: 700;
+}
 
 a {
   color: $primary-color;
@@ -42,6 +45,7 @@ h1, .h1{
 }
 
 h2, .h2{
+  color: $tertiary-color;
   font-size: 40px;
 }
 

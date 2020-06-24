@@ -1,74 +1,118 @@
 {{ define "main" }}
 
 <!-- banner -->
-<section class="banner bg-cover" style="background-image: url('{{ .Site.Params.banner.bgImage | relURL }}');">
+<!--section class="banner bg-cover" style="background-image: url('{{ .Site.Params.banner.bgImage | relURL }}');">
   <img src="{{ .Site.Params.banner.image | relURL }}" class="img-fluid illustration rounded-circle" alt="">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 mb-5 mb-lg-0">
         <h1>{{ .Site.Params.banner.title | markdownify }}</h1>
       </div>
-      <div class="col-lg-6 illustration-mobile">
-        <img src="{{ .Site.Params.banner.image | relURL }}" class="img-fluid rounded-circle" alt="">
-      </div>
     </div>
   </div>
-</section>
+</section-->
 <!-- /banner -->
 
-<!-- cta -->
-{{ if .Site.Params.cta.enable }}
+<main role="main" class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>About Richard</h1>
+        <h2>Pro Musician and Teacher</h2>
+        <p class="lead">Richard earned his <b>BA in Music at Yale University</b>.
+        </p>
+        <p>Since then, he has been involved in music his whole life, performing regularly in groups of all sizes, and leading the <b>Jon Hamilton Big Band</b> as Musical Director for the past eight years.<br>
+        </p>
+        <p>He plays regularly in the five-piece swing band <b>The Night Owls</b>, which can be seen performing all-year round in the South East of the U.K.<br>   
+        </p>
+        <p><b>Virtual lessons available via Skype.</b></p>
+        <a class="btn btn-lg btn-primary" href="" role="button"
+        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/melks'});return false;">Book your first lesson now »</a>
+      </div>
+      <div class="col-md-5">
+        <img src="{{ .Site.Params.banner.image | relURL }}" class="mx-auto d-block rounded m-3 p-3" alt="">
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- what I teach -->
 <section class="section pt-0">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <div class="row shadow bg-white p-2 mb-2 rounded">
-          <div class="col-md-4 text-center text-md-left mb-4 mb-lg-0">
-            <img src="images/sax.png" class="mr-4 img-fluid" alt="..."></div>
-          <div class="col-md-8 text-center text-md-left">
+    <div class="row bg-light p-3 px-2">
+      <h2>What Richard teaches</h2>
+      <div class="col-lg-8 pt-2 mx-auto">
+        <div class="row shadow bg-dark mb-2">
+          <div class="col-md-8 ml-4 text-light text-center text-md-left">
+            <span>All classes can be offered remotely by Skype or in-person.</span>
+           </div>
+        </div>
+        <div class="row shadow bg-light p-2 mb-2 rounded">
+          <div class="col-md-2 p-2 mb-4 mb-lg-0">
+            <img src="images/sax.png" class="m-4 img-fluid" alt="..."></div>
+          <div class="col-md-8 ml-4 text-center text-md-left">
             <h3 class="mt-0">Saxophone</h3>
-            <p>{{ .Site.Params.cta.description | markdownify }}</p>
-            {{ if .Site.Params.cta.button.enable }}
+            <p>Level: Beginner to Advanced (Grade 8+)<br>Style: Swing/Jazz or Classical</p>
             <!-- calendly button -->
             <a href=""
               class="btn btn-primary" 
-              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/melks'});return false;">{{ .Site.Params.cta.button.label }}</a>
-            {{ end }}
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/melks/sax-lesson-1hr'});return false;">Book a saxophone lesson</a>
           </div>
         </div>
-        <div class="row shadow bg-white p-2 mb-2 rounded">
-          <div class="col-md-4 text-center text-md-left mb-4 mb-lg-0">
-            <img src="images/clarinet.png" class="mr-4 img-fluid" alt="..."></div>
-          <div class="col-md-8 text-center text-md-left">
+        <div class="row shadow bg-light p-2 mb-2 rounded">
+          <div class="col-md-2 p-2 mb-4 mb-lg-0">
+            <img src="images/clarinet.png" class="m-4 img-fluid" alt="..."></div>
+          <div class="col-md-8 ml-4 text-center text-md-left">
             <h3 class="mt-0">Clarinet</h3>
-            <p>{{ .Site.Params.cta.description | markdownify }}</p>
-            {{ if .Site.Params.cta.button.enable }}
+            <p>Level: Beginner to Advanced (Grade 8+)<br>Style: Swing/Jazz or Classical</p>
             <!-- calendly button -->
             <a href=""
               class="btn btn-primary" 
-              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/melks'});return false;">{{ .Site.Params.cta.button.label }}</a>
-            {{ end }}
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/melks/clarinet-lesson-1hr'});return false;">Book a clarinet lesson</a>
           </div>
         </div>
-        <div class="row shadow bg-white p-2 mb-2 rounded">
-          <div class="col-md-4 text-center text-md-left mb-4 mb-lg-0">
-            <img src="images/theory.png" class="mr-4 img-fluid" alt="..."></div>
-          <div class="col-md-8 text-center text-md-left">
+        <div class="row shadow bg-light p-2 mb-2 rounded">
+          <div class="col-md-2 p-2 mb-4 mb-lg-0">
+            <img src="images/theory.png" class="m-4 img-fluid" alt="..."></div>
+          <div class="col-md-8 ml-4 text-center text-md-left">
             <h3 class="mt-0">Music Theory</h3>
-            <p>{{ .Site.Params.cta.description | markdownify }}</p>
-            {{ if .Site.Params.cta.button.enable }}
+            <p>Associate Board (ABRSM) and Trinity Music Theory Exam preparation, Grades 1 to 8.</p>
             <!-- calendly button -->
             <a href=""
               class="btn btn-primary" 
-              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/melks'});return false;">{{ .Site.Params.cta.button.label }}</a>
-            {{ end }}
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/melks/theory-lesson-1hr'});return false;">Book a theory lesson</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-{{ end }}
 <!-- /cta -->
+
+<!-- /video -->
+<section class="section pt-0">
+  <div class="container">
+<div class="row">
+  <div class="col-lg-8 mx-auto">
+    <div class="row shadow bg-light p-2 mb-2 rounded">
+    <!-- 16:9 -->
+    <h4>Richard plays in The Night Owls</h4>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/FPvPQzTzfZg"></iframe>
+    </div>
+  </div>
+  </div>
+  <div class="col-lg-8 mx-auto">
+    <div class="row shadow bg-light p-2 mb-2 rounded">
+    <!-- 16:9 -->
+    <h4>Richard plays in and directs the John Hamilton Big Band</h4>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="//www.youtube.com/embed/W6_es3pvG8Y"></iframe>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</section>
 
 {{ end }}

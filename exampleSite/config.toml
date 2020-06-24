@@ -6,21 +6,13 @@ summaryLength = "10"
 theme = "northendlab-hugo"
 title = "Richard Melkonian Music | Teacher - Band Leader - Musician"
 [[menu.footer]]
-URL = "contact"
+URL = "mailto:enquiries@rmelkonianmusic.com"
 name = "Contact Richard"
-weight = 1
-[[menu.footer]]
-URL = "about-me"
-name = "About"
-weight = 2
-[[menu.main]]
-URL = "about"
-name = "About me"
 weight = 1
 [[menu.main]]
 URL = "book"
 name = "Book a Lesson"
-weight = 2
+weight = 1
 [outputs]
 home = ["HTML", "AMP", "RSS", "JSON"]
 [params]
@@ -43,7 +35,7 @@ image = "images/hugo-muscot.svg"
 title = "Get the best hugo templates"
 [params.cta.button]
 enable = true
-label = "Visit Here"
+label = "Book a Lesson"
 [[params.plugins.calendly]]
 css = "https://calendly.com/assets/external/widget.css"
 js = "https://calendly.com/assets/external/widget.js"
@@ -68,10 +60,7 @@ preloader = ""
 enable = false
 [[params.social]]
 icon = "ti-facebook"
-link = "#"
-[[params.social]]
-icon = "ti-twitter-alt"
-link = "#"
+link = "https://www.facebook.com/Jon-Hamilton-Big-Band-189239104457451/"
 [[params.social]]
 icon = "ti-linkedin"
-link = "#"
+link = "https://www.linkedin.com/in/richard-melkonian-09241088/"
